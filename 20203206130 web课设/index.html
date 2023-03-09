@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<meta charatestb utf-8>
+		<title>计算机</title>
+		<style type="text/css">
+		#Container{
+			width:1000px;
+			margin:0 auto;
+			
+			
+		}
+		#Header{
+			background:#FFFFFF;
+			height:80px;
+			margin-top:20px;
+		}
+		img{
+			width:100px;
+			height:70px;
+			margin:9px;
+			
+		}
+		#time{
+			padding-top:20px;
+			width:250px;
+			height:50px;
+			background:#ADFF2F;
+			text-align:center;
+		}
+		
+		.menu {
+		  overflow: hidden;
+		  background-color: #90EE00;
+		}
+		 
+		
+		.menu a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 5px 5px;
+		  text-decoration: none;
+		}
+		 
+		.menu a:hover {
+		  background-color: #ddd;
+		  color: #0FFFFF;
+		}
+		#Content{
+			height:550px;
+			margin-top:20px;
+			background:#FFFFFF;
+		}
+		#Content-Left{
+			height:450px;
+			width:250px;
+			margin:20px;
+			float:left;
+			
+		}
+		#Content-Main{
+			height:450px;
+			width:650px;
+			margin:20px;
+			float:left;
+			
+			
+		}
+		#Footer{
+			height:100px;
+			background-color: #FFFFFF;
+			margin-top:5px;
+		}
+		p{
+				background-color:cyan;
+			}
+		.Clear{
+			clear:both;
+			
+		}
+		.Font{
+			font-size:35;
+		}
+		</style>
+		
+	
+	</head>
+	<body background="index_files\16.jpg" height="1000px">
+		<div id="txt" style="text-align:center;"></div>
+		<div id="Container">
+			<div id="Header" class="Font" >
+				<h2 align="center" style="color:red">计算机知识</h2>
+				
+				
+			</div>
+			<hr></hr>
+			<a href = "index_files\01.jpg "><img src="index_files\01.jpg " /></a>
+			<a href = "index_files\03.png "><img src="index_files\03.png" /></a>
+			<a href = "index_files\04.jpg "><img src="index_files\04.jpg" /></a>
+			<a href = "index_files\05.jpg "><img src="index_files\05.jpg" /></a>
+			<a href = "index_files\06.jpg "><img src="index_files\06.jpg" /></a>
+			<a href = "index_files\07.jpg "><img src="index_files\07.jpg" /></a>
+			<a href = "index_files\02.jpg "><img src="index_files\02.jpg" /></a>
+			<a href = "index_files\08.jfif "><img src="index_files\08.jfif" /></a>
+				
+			<div id = "Content">
+				<div class="menu">
+					<a href="index.html">首页</a>
+					<a href="index_计算机知识.html">计算机知识</a>
+		  			<a href="index_01.html">C++</a>
+		  			<a href="index_02.html">Java</a>
+		  			<a href="index_03.html">Python</a>
+		  			<a href="index_04.html">各类型软件</a>
+					
+			
+		
+					</div>
+				<div id="Content-Left">
+					<form name="fff">
+						请输入基本资料：<br />
+						姓名：<input type = "text" name ="usr" size="8">
+			  			<input type="button" value="确认"
+			  			onClick="alert(fff.usr.value+':欢迎您！')">
+					</form>
+					<table bgcolor=#F0FFFF>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>用户名：</td>
+							<td><input name="user" type="text" autofocus ="autofocus"placeholder="20203206130" required="required"/></td>
+						</tr>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>密码：</td>
+							<td><input name="ps" type="password" required="required" /></td>
+						</tr>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>性别：</td>
+							<td>
+							男<input name="sex" type="radio" value="男" />
+				   			女<input name="sex" type="radio" value="女" />
+							</td>
+						</tr>
+						<tr>
+				
+							<td><sup style = "color:#f00;">*</sup>年龄：</td>
+							<td><input type="number" min= "0" max="150" required="required" /></td>
+						</tr>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>Email：</td>
+							<td><input type="email"  placeholder="2153087993@qq.com" required="required"/></td>
+						</tr>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>出生日期：</td>
+							<td><input type="date" required="required" /></td>
+						</tr>
+						<tr>
+							<td><sup style = "color:#f00;">*</sup>籍贯：</td>
+							<td>
+								<select>
+									<option>
+									<option>甘肃省
+									<option>北京市
+									<option>上海市
+									<option>广东省
+									<option>陕西省
+									
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="reset"/>
+							</td>
+						</tr>
+					</table>
+					<marquee  direction = "right" behavior = "scroll" scrollamount = "3">
+					<img src="index_files\08.jpg" />
+					<img src="index_files\09.jfif" />
+					</marquee>
+					<div id="time">
+ 
+					</div>
+						<script type="text/javascript">
+							var add=setInterval("getTime()",1000);
+    
+							
+							function getTime() {
+							var date=new Date().toLocaleString();
+							var id1=document.getElementById("time");
+							id1.innerHTML=date;
+							}
+ 						document.onLoad=alert('欢迎进入！')
+						</script>
+				</div>
+				<div id="Content-Main">
+					<blockquote>
+					<ul>
+					  <li><a href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA/140338?fr=aladdin">计算机（computer）俗称电脑，是现代一	种用于高速计算的电子......</a></li>
+					  <br />
+					  <li><a href="https://baike.baidu.com/item/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/9845131?fr=aladdin">编程语言（programming language）可以简单的理解为一种计算机......</a></li>	
+					  <br />
+					  <li><a href="https://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BD%AF%E4%BB%B6/223688?fr=aladdin">计算机软件( Software，也称软件)是指计算机系统中的程序及其文档......</a></li><br />
+					<li><a href="https://baike.baidu.com/item/%E7%A1%AC%E4%BB%B6/479446?fromtitle=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A1%AC%E4%BB%B6&fromid=5459592&fr=aladdin">硬件（英文名Hardware）是计算机硬件的简称（中国大陆及香港用语......</a></li>
+					
+					<hr></hr>
+					<li><a href="https://detail.zol.com.cn/notebook_index/subcate16_list_1.html">电脑</a></li>
+					<a href = "https://detail.zol.com.cn/series/16/30169_1.html "><img src="index_files\10.jpg " /></a>
+					<a href = "https://detail.zol.com.cn/series/16/30077_1.html "><img src="index_files\11.jpg " /></a>
+					<a href = "https://detail.zol.com.cn/series/16/35945_1.html"><img src="index_files\12.jpg " /></a>
+					<a href = "https://detail.zol.com.cn/notebook/index1393408.shtml"><img src="index_files\14.jpg " /></a>
+					<hr></hr>
+					<li>常用软件下载地址</li>
+					<a href="https://www.eclipse.org/downloads/">eclipse</a>
+					<a href="https://www.jetbrains.com/pycharm/">pycharm</a>
+					<a href="https://www.jetbrains.com/idea/download/#section=windows">IntelliJ IDEA</a>
+					<a href="https://visualstudio.microsoft.com/zh-hans/">Visual Stydio</a>
+					<a href="https://www.python.org/downloads/">python</a>
+					<a href="https://www.oracle.com/java/technologies/downloads/">Java</a>
+					<a href="https://sourceforge.net/projects/orwelldevcpp/">Dev-C++</a>
+					<hr></hr>
+					<li><a href="https://baijiahao.baidu.com/s?id=1609489352037787700&wfr=spider&for=pc">计算机就业前景与方向</a></li><br />
+					<li><a href="http://www.baidu.com">想要了解更多知识请点击</a></li>
+					
+					</ul>
+					
+					</blockquote>
+				</div>
+				
+			</div>
+			<div class="Clear"></div>
+			<div id="Footer">
+				<p align="center">软件工程2001班</p>
+				<p align="center">20203206130</p>
+				<p align="center">闫凌飞</p>
+			</div>
+			
+		</div>
+	</body>
+</html>
